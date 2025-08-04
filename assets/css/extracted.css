@@ -17,7 +17,7 @@ body {
 
 /* header part styling */
 header .nav-item .nav-link{
-   color: #ffffff;
+   color: #2b2b2b;
     font-size: 1.4rem;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
@@ -271,19 +271,11 @@ header .navbar-toggler{
           padding:10px;
            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
        }
-       /*
-       .car-slider h2{
-         font-family: 'Poppins', sans-serif;
-        font-size: 2.5rem;
-        padding-top:2rem;
-       } */
-
-        .car-slider h2 {
-              font-family: 'Poppins', sans-serif;
-            
-             font-size: 2.5rem;
-            color: #272727; 
-            font-weight: 600;
+      .car-slider h2 {
+          font-family: 'Poppins', sans-serif;
+          font-size: 2.5rem;
+          color: #272727; 
+          font-weight: 600;
          /*  color: #4caf50; */
             text-align: center;
             margin-block: 2.5rem;
@@ -313,6 +305,7 @@ header .navbar-toggler{
       
    /* why us section styling */
         .why-us {
+        
             padding:0 2rem 1rem 2rem;
             text-align: center;
         }
@@ -325,7 +318,9 @@ header .navbar-toggler{
         }
         .why-us__item {
             position:relative;
-            background-color: #f1f0f0;
+           /* background-color: rgb(247, 246, 235); */
+            background-color: #edf9fa;
+            /* background-color: #fff; */
             padding: 1rem;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -339,8 +334,8 @@ header .navbar-toggler{
          .why-us__item::after,.why-us__item::before {
             content:'';
             position:absolute;
-            height:100%;
-            width:100%;
+            height:102%;
+            width:101%;
            background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095); 
            /* background-image: conic-gradient(from  var(--angle), transparent 70%, blue); */
             top:0%;
@@ -358,11 +353,11 @@ header .navbar-toggler{
                 --angle: 360deg;
                }
             }*/
-
+        /*
             .why-us__item::before{
             filter:blur(1.5rem);
             opacity:0.5;
-          }  
+          }   */
          
         .why-us__icon {
             max-width: 60px;
@@ -371,8 +366,8 @@ header .navbar-toggler{
            
         }
          .why-us_title {
-            
-            color:#4caf50;
+            color:#000;
+           /* color:#4caf50; */
             font-weight: 600;
              font-size: 2.5rem;
              margin-bottom: 3rem;
@@ -383,7 +378,7 @@ header .navbar-toggler{
             margin-bottom: 1rem;
         }
         .why-us__description {
-            color: #666;
+            color: #141414;
             font-size:1.2rem;
         }
 
@@ -398,7 +393,7 @@ header .navbar-toggler{
             font-size: 2.5rem;
             color: #4caf50;
             font-weight: 600;
-            /*  color: #272727;  */
+            /*  color: #272727;  */ 
             margin-bottom: 2rem;
         }
         .how-it-works__steps {
@@ -409,29 +404,29 @@ header .navbar-toggler{
         }
         .step {
             position:relative;
-            background-color: #f8f2f2;
+            background-color: rgb(252, 251, 243);
             padding: 2rem;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
             text-align: center;
         }
          .step::after, .step::before {
             content:'';
             position:absolute;
-            height:100%;
-            width:100%;
+            height:102%;
+            width:101%;
            background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095); 
            top:0%;
             left:0%;
             z-index:-1;
             padding:3px;
             border-radius:12px;
-         }
-         
-       .step::before{
+         }/*
+           .step::before{
             filter:blur(1.5rem);
             opacity:0.5;
-          }  
+          } */ 
+     
         .step__icon {
             max-width: 70px;
             height: 40px;
@@ -443,7 +438,7 @@ header .navbar-toggler{
             margin-block: 1rem;
         }
         .step__description {
-            color: #666;
+            color: #272727;
             font-size: 1.2rem;
         }
       /* partner section */     

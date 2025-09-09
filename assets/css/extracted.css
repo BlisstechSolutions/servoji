@@ -634,7 +634,7 @@ header .navbar-toggler{
        /* margin-left: 1.5rem;*/
        
      }
-  .contactForm .form-row select {
+ 
   .contactForm .form-row select {
             width:100%;
            padding-block: 1rem;
@@ -645,6 +645,7 @@ header .navbar-toggler{
             padding-left: 0.5rem;
              background-color: white;
         }
+       
       .contactForm .form-row input[type="text"],
            .contactForm .form-row input[type="email"],
             .contactForm .form-row input[type="tel"],

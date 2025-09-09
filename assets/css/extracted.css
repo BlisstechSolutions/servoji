@@ -922,13 +922,303 @@ header .navbar-toggler{
      color:rgb(14, 13, 13);
      text-align: center;
      padding: 2rem 0;
-    
-
-     }   
+    }   
       .footer p{
         padding-top:1rem;
         font-weight: 600;
       } 
+     .policy_terms{
+      display: flex;
+      justify-content: space-between;
+      justify-content: center;
+      gap:2rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.05rem;
+     
+     } 
+     /* popup of privacy section */
+     /* The Modal (hidden by default) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.privacy_policy{
+  font-family:Arial, Helvetica, sans-serif;
+  max-height:600px;
+  overflow-y: scroll;
+  font-size: 0.8rem;
+  text-align: start;
+  padding: 10px;
+  cursor: pointer;
+   letter-spacing: 0.1px;
+   line-height: 1.7rem;
+  
+
+}
+.privacy_policy strong{
+  font-size: 1.2rem;
+  padding:0 0.5rem 0 0;
+ 
+}
+.privacy_policy p{
+  font-size: 1.05rem;
+   color:#3f3e3e;
+   margin-block: 0;
+}
+.privacy_policy ul li{
+    font-family:Arial, Helvetica, sans-serif;
+  font-size: 0.97rem;
+  letter-spacing: 0.01px;
+  color: #6b6a6a;
+
+}
+.privacy_policy ul li::marker{
+   font-size: 24px;
+ }
+
+/* Modal Content Box */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  width: 70%;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Close Button */
+.close {
+  padding-bottom: 0.2rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width:2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(75, 74, 74);
+  background-color: #5ddd99;
+  font-size: 32px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.modal h2{
+  color: #233830;
+  font-weight: 700;
+  margin-top: 1rem;
+  padding-left: 10px;
+ align-self: start;
+}
+
+.close:hover {
+  transform:scale(1.1);
+  background-color:#d8d4d4 ;
+  color:#328056;
+}
+@media screen and (min-width:944px) {
+ .modal-content{
+    width:50%;
+      margin: 10% auto;
+  }
+}
+ a {
+      color: blue;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .terms {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+  margin: 20px;
+}
+.privacy:hover{
+  color:rgb(88, 88, 88);
+  cursor: pointer;
+}
+
+/* Modal Styles for terms section */
+.terms-and-conditions{
+  font-family:Arial, Helvetica, sans-serif;
+  max-height:600px;
+  overflow-y: scroll;
+  font-size: 0.8rem;
+  text-align: start;
+  padding: 10px;
+  cursor: pointer;
+   letter-spacing: 0.01px;
+   line-height: 1.9rem;
+  }
+  .terms-and-conditions h2{
+    font-size: 1.5rem;
+    letter-spacing: 0.3;
+  }
+.terms-and-conditions strong{
+  font-size: 1.2rem;
+  padding:0 0.5rem 0 0;
+  font-weight: 800;
+ 
+}
+.terms-and-conditions p{
+  font-size: 1.05rem;
+   color:#3f3e3e;
+   margin-block: 0;
+}
+.terms-and-conditions ul li{
+    font-family:Arial, Helvetica, sans-serif;
+  font-size: 0.97rem;
+  letter-spacing: 0.01px;
+  color: #6b6a6a;
+
+}
+.terms_of_services:hover{
+  color:rgb(88, 88, 88);
+  cursor: pointer;
+}
+.terms-and-conditions ul li::marker{
+   font-size: 24px;
+ }
+  .modal1 {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+
+.modal-content1 {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  width: 70%;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close1 {
+  padding-bottom: 0.2rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width:2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(75, 74, 74);
+  background-color: #5ddd99;
+
+  font-size: 32px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.close1:hover {
+  transform:scale(1.1);
+  background-color:#d8d4d4 ;
+  color:#328056;
+}
+.modal1 h2{
+   color: #233830;
+  font-weight: 700;
+  margin-top: 1rem;
+  padding-left: 10px;
+  display:flex;
+ align-self: start;
+}
+@media screen and (min-width:944px) {
+ .modal-content1{
+    width:50%;
+      margin: 10% auto;
+  }
+}
+@media screen and (max-width:767px) {
+  .privacy_policy strong{
+  font-size: 1rem;
+}
+.privacy_policy p{
+  font-size: 0.9rem;
+ }
+.privacy_policy ul li{
+   font-size: 0.97rem;
+}
+.privacy_policy{
+ max-height:400px;
+  font-size: 0.8rem;
+  text-align: start;
+  padding: 10px;
+  cursor: pointer;
+   letter-spacing: 0.1px;
+   line-height: 1.7rem;
+}
+.modal-content {
+  background-color: #fff;
+  margin: 50% auto;
+  padding: 20px;
+  width: 90%;
+  border-radius: 8px;
+  position: relative;
+}
+ .terms-and-conditions strong{
+  font-size: 1rem;
+}
+.terms-and-conditions p{
+  font-size: 0.9rem;
+ }
+.terms-and-conditions ul li{
+   font-size: 0.97rem;
+}
+.terms-and-conditions{
+ max-height:400px;
+  font-size: 0.8rem;
+  text-align: start;
+  padding: 10px;
+  cursor: pointer;
+   letter-spacing: 0.1px;
+   line-height: 1.7rem;
+}
+.modal-content1 {
+  background-color: #fff;
+  margin: 50% auto;
+  padding: 20px;
+  width: 90%;
+  border-radius: 8px;
+  position: relative;
+}
+.close1 {
+  padding-bottom: 0.2rem;
+  margin-bottom: 1.5rem;
+  width:2rem;
+  height: 2rem;
+  font-size: 26px;
+  
+}
+.modal1 h2{
+  margin-top: 1rem;
+  display:flex;
+  text-align: start;
+}
+}
      
 /* Q&A Side Panel - Now with Glassmorphism! */
  #qa-side-panel {

@@ -168,6 +168,7 @@ header .navbar-toggler{
 
    .feature-content {
     padding-top:2rem;
+    padding-left:0.5rem;
       flex: 1;
       min-width: 280px;
       color: #2e2e2e;
@@ -626,15 +627,18 @@ header .navbar-toggler{
      }
      .form-row1 .checkbox{
         margin-top: 0.5rem;
-        margin-right:0 ;
+        margin-right:1rem ;
+       /* margin-left: 1.5rem;*/
        
      }
-  .contactForm select {
+  .contactForm .form-row select {
             width:100%;
-            padding: 0.8rem;
+           padding-block: 1rem;
             border: 1px solid #ccc;
             border-radius: 6px;
             font-size: 1.1rem;
+            padding-left: 0.5rem;
+             background-color: white;
         }
       .contactForm .form-row input[type="text"],
            .contactForm .form-row input[type="email"],
@@ -642,6 +646,7 @@ header .navbar-toggler{
              .contactForm .form-row select,
              .contactForm .form-row textarea {
               padding-block: 1rem;
+             
              }    
     
  @media screen and (max-width:767px) {
@@ -654,8 +659,14 @@ header .navbar-toggler{
  }
  .contactForm .form-row .input-group{
   display:flex;
+  
  }
-       
+   .contactForm .form-row .input-group .code select{
+    padding-block: 1.1rem;
+    background-color: white;
+    
+   
+   }     
 /*   
 .contact-form-grid {
   display: grid;
@@ -806,6 +817,7 @@ header .navbar-toggler{
         }
 
         .newsletter__form {
+         
             max-width: 500px; 
             margin: 0 auto;
             display: flex;
@@ -823,6 +835,7 @@ header .navbar-toggler{
                font-size: 1.2rem;
            }
         }
+       
         /* newletter__button styling */
      .newsletter__button {   
          /* background-color: #4caf50;*/
@@ -874,8 +887,16 @@ header .navbar-toggler{
             gap:0;
             font-size: 1rem;
       }
-     
+         .newsletter__form {
+              display:flex;
+              justify-content: center;
+              align-items: center;
+           }
+           .newsletter__button {  
+             padding-block: 0.7rem;
+           }
    }
+    
    
      
        

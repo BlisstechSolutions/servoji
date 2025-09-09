@@ -1033,7 +1033,7 @@ header .navbar-toggler{
   }
 }
  a {
-      color: blue;
+      color:#4CAF50;
       text-decoration: none;
     }
     a:hover {
@@ -1041,7 +1041,7 @@ header .navbar-toggler{
     }
 
     .terms {
-  color: blue;
+  color: #4CAF50;
   cursor: pointer;
   text-decoration: underline;
   margin: 20px;
@@ -1238,13 +1238,8 @@ header .navbar-toggler{
     transition: all 0.3s ease-in-out;
     z-index: 1000;
     overflow: hidden;
-   @media (max-width: 768px) {
-        bottom: 10px;
-        right: 10px;
-        width: 60px; /* Slightly smaller on small screens */
-        height: 60px;
-    }
-}
+ }
+   
 #qa-side-panel.expanded {
     width: min(50vw, 480px);
     height: 70vh;
@@ -1258,9 +1253,18 @@ header .navbar-toggler{
 
     border-radius: 1rem;
     right: 20px;
+}
     /* Adjusted Mobile styles for expanded state */
     @media (max-width: 768px) {
+       #qa-side-panel {
+        bottom: 10px;
+        right: 10px;
+        width: 60px; /* Slightly smaller on small screens */
+        height: 60px;
+    }
+        #qa-side-panel.expanded {
         width: 90vw;
+        height:80vh;
       /*  height: calc(95vh - env(safe-area-inset-bottom)); /* Use 95vh minus safe area for dynamic height */
         min-height: unset; /* Remove min-height override on mobile */
         bottom: env(safe-area-inset-bottom, 5px); /* Anchor to bottom, respect safe area */
@@ -1271,14 +1275,8 @@ header .navbar-toggler{
         top: auto; /* Ensure it sticks to the bottom */
     }
   }
-  @media screen and (max-width:767px){
-     #qa-side-panel.expanded{
-      height: 80vh;
-      min-height: 250px;
-       min-height: unset; 
-     }
-  }
-#qa-side-panel-toggle-btn {
+   
+ #qa-side-panel-toggle-btn {
     background-color: transparent;
     border: none;
     color: white;
@@ -1290,7 +1288,11 @@ header .navbar-toggler{
     align-items: center;
     justify-content: center;
 }
-#qa-side-panel-toggle-btn .icon { transition: transform 0.3s ease-in-out; }
+ /* Toggle Icons */
+#qa-side-panel-toggle-btn  .chat-icon { 
+
+  transition: transform 0.3s ease-in-out; 
+}
 #qa-side-panel.expanded #qa-side-panel-toggle-btn {
     color: #1f2937;
     position: absolute;
@@ -1301,7 +1303,9 @@ header .navbar-toggler{
     font-size: 1.5rem;
     transform: none;
 }
-#qa-side-panel:not(.expanded) #qa-side-panel-toggle-btn .chat-icon { display: block; }
+#qa-side-panel:not(.expanded) #qa-side-panel-toggle-btn .chat-icon { 
+  display: block;
+ }
 #qa-side-panel.expanded #qa-side-panel-toggle-btn .chat-icon { display: none; }
 #qa-side-panel:not(.expanded) #qa-side-panel-toggle-btn .close-icon { display: none; }
 #qa-side-panel.expanded #qa-side-panel-toggle-btn .close-icon { display: block; }
@@ -1310,14 +1314,17 @@ header .navbar-toggler{
     display: none;
     flex-grow: 1;
     width: 100%;
+    height: 100%;
     padding: 1.5rem;
     padding-top: 50px;
     flex-direction: column;
 }
-#qa-side-panel.expanded #qa-panel-content { display: flex; }
+#qa-side-panel.expanded #qa-panel-content {
+   display: flex;
+   }
 
 .qa-container {
-    flex-grow: 1;
+  /*  flex-grow: 1;*/
     display: flex;
     flex-direction: column;
     background-color: transparent;
@@ -1332,14 +1339,41 @@ header .navbar-toggler{
     background-color: #f9fafb;
     max-height: 300px;
 }
-.qa-message { margin-bottom: 0.75rem; line-height: 1.4; animation: fadeInMessage 0.3s ease-out forwards; }
-.qa-message.user { text-align: right; }
-.qa-message.bot { text-align: left; }
-.qa-message-bubble { display: inline-block; padding: 0.75rem 1rem; border-radius: 1rem; max-width: 80%; word-wrap: break-word; }
-.qa-message.user .qa-message-bubble { background-color:  #FF7F50; color: white; }
-.qa-message.bot .qa-message-bubble { background-color: #e5e7eb; color: #1f2937; }
-@keyframes fadeInMessage { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-.qa-current-question-container { display: flex; flex-direction: column; gap: 0.75rem; }
+.qa-message {
+   margin-bottom: 0.75rem; 
+   line-height: 1.4;
+    animation: fadeInMessage 0.3s ease-out forwards;
+   }
+.qa-message.user { 
+  text-align: right;
+ }
+.qa-message.bot { 
+  text-align: left; 
+}
+.qa-message-bubble { 
+  display: inline-block;
+   padding: 0.75rem 1rem;
+    border-radius: 1rem;
+     max-width: 80%; 
+     word-wrap: break-word;
+     }
+.qa-message.user .qa-message-bubble { background-color:  #FF7F50;
+   color: white;
+   }
+.qa-message.bot .qa-message-bubble { 
+  background-color: #e5e7eb; 
+  color: #1f2937; 
+}
+@keyframes fadeInMessage { 
+  from {
+     opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); } 
+    }
+.qa-current-question-container {
+   display: flex;
+    flex-direction: column;
+     gap: 0.75rem;
+     }
 .qa-question-button {
     background-color:#1E1E1E;
     color: white;
@@ -1349,8 +1383,18 @@ header .navbar-toggler{
     transition: background-color 0.2s ease;
 }
 .qa-question-button:hover { background-color: #444444; }
-.qa-input-area { display: flex; margin-top: 1rem; }
-.qa-input-area input { flex-grow: 1; padding: 0.75rem 0.7rem; border: 1px solid #d1d5db; border-radius: 0.5rem 0 0 0.5rem; outline: none; }
+.qa-input-area { 
+  display: flex;
+   margin-top: 1rem;
+   width:100%;
+   }
+.qa-input-area input {
+   flex-grow: 1;
+    padding: 0.75rem; 
+    border: 1px solid #d1d5db;
+     border-radius: 0.5rem 0 0 0.5rem;
+      outline: none;
+     }
 .qa-input-area button {
     background-color:  #FF7F50;
     color: white;
@@ -1360,4 +1404,6 @@ header .navbar-toggler{
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
-.qa-input-area button:hover { background-color: #E6613F; }
+.qa-input-area button:hover { 
+  background-color: #E6613F;
+ }

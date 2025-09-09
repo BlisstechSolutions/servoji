@@ -169,6 +169,7 @@ header .navbar-toggler{
    .feature-content {
     padding-top:2rem;
     padding-left:0.5rem;
+    padding-left:0.5rem;
       flex: 1;
       min-width: 280px;
       color: #2e2e2e;
@@ -629,10 +630,14 @@ header .navbar-toggler{
         margin-top: 0.5rem;
         margin-right:1rem ;
        /* margin-left: 1.5rem;*/
+        margin-right:1rem ;
+       /* margin-left: 1.5rem;*/
        
      }
   .contactForm .form-row select {
+  .contactForm .form-row select {
             width:100%;
+           padding-block: 1rem;
            padding-block: 1rem;
             border: 1px solid #ccc;
             border-radius: 6px;
@@ -818,6 +823,7 @@ header .navbar-toggler{
 
         .newsletter__form {
          
+         
             max-width: 500px; 
             margin: 0 auto;
             display: flex;
@@ -835,6 +841,7 @@ header .navbar-toggler{
                font-size: 1.2rem;
            }
         }
+       
        
         /* newletter__button styling */
      .newsletter__button {   
@@ -895,7 +902,16 @@ header .navbar-toggler{
            .newsletter__button {  
              padding-block: 0.7rem;
            }
+         .newsletter__form {
+              display:flex;
+              justify-content: center;
+              align-items: center;
+           }
+           .newsletter__button {  
+             padding-block: 0.7rem;
+           }
    }
+    
     
    
      

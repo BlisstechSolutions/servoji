@@ -13,7 +13,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 12px 40px;
-  background-color: white;
+  background-color: #fff;
+  
   position: relative;
 }
 .logo img {
@@ -26,6 +27,7 @@
   gap: 25px;
   align-items: center;
    font-size: 1.1rem;
+   
   
 }
 
@@ -49,6 +51,9 @@
 
 /* === Responsive styles === */
 @media (max-width: 992px) {
+  .navbar{
+     padding: 12px 20px;
+  }
   .hamburger {
     display: block;
    
@@ -106,8 +111,9 @@
 .mute-btn {
   position: absolute;
   top: 20px;
-  right: 35px;
+  right: 15px;
   background: #25A941;
+  color:rgb(243, 240, 240);
   border: none;
   border-radius: 50%;
   padding: 10px;
@@ -195,13 +201,14 @@
 }
 .car-heading .car-wash{
    position: absolute;
-   left:380px;
+   left:330px;
    top:50%;
    margin-top: 1rem;
   font-style: italic;
 }
 .car-wrapper-content p{
-    margin-top: 3rem;
+    margin-top: 1rem;
+  
     font-size: 1.2rem;
     text-wrap: wrap;
     width:30rem;
@@ -229,7 +236,7 @@
 }
 @media screen and (max-width:767px) {
  .car-wrapper {
-    height: 500px;
+    height: 300px;
   }
  
 .mute-btn img {
@@ -245,13 +252,18 @@
    padding: 12px 12px;
    font-size: 1.2rem;
    text-decoration: none;
+    padding: 6px 6px;
+   font-size: 1rem;
  }
  
  .play-button h1{
    font-size: 2.35rem;
+   font-size: 1.2rem;
 }
  .play-btn img, .app-btn img{
     width:2rem;
+
+      width:1.5rem;
 }
 .ads{
     position: absolute;
@@ -262,20 +274,31 @@
 .car-heading h1{
   font-size: 2.5rem;
   margin-top: 1.4rem;
+   font-size: 1.6rem;
+  margin-top: 1.2rem;
 }
 .car-heading .car-wash{
-   left:90px;
+   left:60px;
    top:50%;
-   font-size: 2.2rem;
+   font-size: 2rem;
+    font-size: 1.6rem;
+     left:90px;
 }
 .car-wrapper-content p{
+     
     font-size: 1.1rem;
     text-wrap: wrap;
     width:22rem;
+     font-size: 1rem;
+     
 }
 .service-btn{
   padding:10px 10px;
   font-size: 1.3rem;
+  width:11rem;
+
+   padding:6px 8px;
+  font-size: 1.2rem;
   width:11rem;
 }
 }
@@ -324,7 +347,7 @@
 
 .servoji-section {
   padding: 80px 20px;
-  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.15);
+ /* box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.15); */
    position: relative;
 }
 
@@ -433,6 +456,7 @@
   }
  .mobile-screens img {
     width: 120px;
+    margin-bottom: 2rem;
   }
  .car-illustration img {
     max-width: 200px;
@@ -456,18 +480,27 @@
 .text-block .heading {
   font-weight: 600;
   margin-bottom: 8px;
+ 
 }
 .text-block p{
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 .text-block ul {
   list-style: none;
   padding-left: 0;
+ 
+
 }
 
 .text-block ul li {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-left: 30px;
+}
+.text-block ul li::before {
+  font-size: 0.8rem;
+}
+.google_img{
+  display:none;
 }
 }
 @media screen and (min-width:993px) {
@@ -516,7 +549,7 @@
   position: relative;
 }
 .discover_title{
-  font-size: 2.3rem;
+  font-size: 1.9rem;
   font-weight: 700;
   position: absolute;
   top:30px;
@@ -545,7 +578,7 @@
 @media screen and (min-width:993px) {
   .discover_title{
     top:100px;
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -558,7 +591,7 @@
 }
 
 .how-it-works h1 {
-  font-size: 2.3rem;
+  font-size: 1.9rem;
   font-weight: 700;
   margin-bottom: 50px;
   color: #111;
@@ -671,10 +704,10 @@
     width: 100%;
   }
   .step-bottom h3 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .step-bottom p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 @media  screen and (min-width:769px) and (max-width:992px){
@@ -684,7 +717,7 @@
 }
 @media screen and (min-width:993px) {
   .how-it-works h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
    .step-card{
     max-width: 340px;
@@ -704,7 +737,7 @@
     font-size: 1.6rem;
   }
   .step-bottom p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .step-number{
     width:50px;
@@ -731,9 +764,9 @@
   
 }
 .why-choose h1 {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   font-weight: 600;
-
+ font-weight: 700;
   
 }
 
@@ -784,16 +817,17 @@
     padding-bottom: 2.5rem;
   }
    .why-choose h1{
-    font-size: 1.9rem;
+    font-size: 1.7rem;
+    font-weight: 700;
    }
    .why_us img{
    width:3rem;
 }
 .feature-card h3{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .feature-card p {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 .feature-card .real_customer_img{
   width:10rem;
@@ -808,7 +842,7 @@
 }
 @media  screen and (min-width:993px) {
   .why-choose h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .why_us img{
   width:5.5rem;
@@ -827,10 +861,10 @@
 
 }
 .feature-card h3{
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .feature-card p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 }
 
@@ -845,7 +879,7 @@
 }
 
 .partner-section h1 {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   font-weight: 700;
  /* margin-bottom: 10px;*/
  margin-bottom: 0;
@@ -860,7 +894,7 @@
   font-style: italic;
   color: #353535;
   margin-bottom: 50px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 0.5;
 }
 .subtitle span{
@@ -945,14 +979,14 @@
     text-align: center; 
 }
   .partner-section h1{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding-top: 1rem;;
   }
   .partner-section h1 img{
     width:3.5rem;
   }
   .partner-section .subtitle{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-wrap: wrap;
     width:24rem;
     line-height: 1.2;
@@ -976,8 +1010,11 @@
     height: auto;
     margin-bottom: 10px;
     margin:0 auto;
+   margin-left: 4rem;
+  
     
   }
+
   .partner-sub-section .col-6{
     width:100%;
   }
@@ -998,52 +1035,53 @@
   box-sizing: border-box;
   }
   .partner-card h3 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .partner-card p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.3;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
 .partner-car{
    width: 260px;
-  /*  position: static !important;
-    margin-top: 20px;*/
- 
-  
-}
+   justify-content: center;
+  /*  position: static !important;*/
+    margin-top: 20px;
+   
+    margin-right: 4.5rem;
+   
+ }
   .partner-car img {
     width: 250px;
     object-fit: cover;
-    padding-right: 2rem;
-  
-   }
+   
+ }
 }
 @media screen and (min-width:993px){
   .partner-section{
      padding: 60px 20px 100px;
   }
   .partner-section h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .partner-section h1 img{
     width:6rem;
   }
   .partner-section .subtitle{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
    
   }
   .partner-card{
-    width:380px;
+    width:250px;
     height:280px;
   }
   .partner-card h3 {
     margin-top: 2rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .partner-card p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.3;
 }
 .partner-cards{
@@ -1059,10 +1097,18 @@
   height:100%;
 }
 .partner-car{
-  width:550px;
+  width:350px;
 }
 }
-
+@media  screen and (min-width:1400px) {
+  .partner-card{
+    width:380px;
+    height:250px;
+   }
+   .partner-car{
+  width:500px;
+}
+}
 /* FAQ section styling */
 
 /* === FAQ Wrapper === */
@@ -1086,7 +1132,7 @@
 }
 
 .faq-content h1 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #000;
   margin-bottom: 2rem;
@@ -1112,13 +1158,13 @@
 }
 
 .faq-item h3 {
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   color: #111;
   margin-bottom: 20px;
 }
 
 .faq-item p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #000;
   background: #f3f3f3;
   background: #dadada;
@@ -1186,18 +1232,21 @@
    }
    .faq-box {
     margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
    }
    .faq-item h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
  }
 
 .faq-item p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
  }
 }
 @media screen and (min-width:993px) {
   .faq-box{
-     max-width:1100px;
+     max-width:800px;
     padding-block: 3rem;
     margin-top: 3rem;
   }
@@ -1213,16 +1262,16 @@
     text-align: center;
   }
   .faq-content h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
    
   }
   .faq-item h3{
-    font-size: 2rem;
+    font-size: 1.6rem;
      margin-bottom: 20px;
   }
   .faq-item p{
-   font-size: 1.4rem;
-   word-spacing:4px;
+   font-size: 1.2rem;
+  
   }
 }
 
@@ -1260,7 +1309,7 @@
 }
 
 .contact-form h1 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   font-weight: 700;
   text-align: left;
@@ -1271,7 +1320,7 @@
   font-weight: 500;
   margin-bottom: 5px;
   margin-top: 15px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .contact-form input,
@@ -1389,9 +1438,11 @@ textarea {
 .checkbox input[type="checkbox"] {
   width: 24px;
   height: 24px;
- margin-bottom: 1rem;
+margin-bottom: 0.5rem;
 }
-
+.checkbox label {
+    font-size: 0.95rem;
+  }
 /* --- Buttons --- */
 .form-buttons {
   display: flex;
@@ -1445,14 +1496,14 @@ textarea {
 }
 
 .newsletter h1 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .newsletter p {
   color: #666666;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   max-width: 420px;
   margin: 0 auto 20px;
 }
@@ -1521,8 +1572,9 @@ textarea {
 .custom-alert1 {
   display: none;
   position: fixed;
-  top: 30%;
-  right: 17%;
+ /* top: 30%;*/
+  bottom:10%;
+  right: 16%;
   background: #25A941;
   background-color: #fff;
   color: white;
@@ -1587,7 +1639,7 @@ textarea {
 
 @media (max-width: 480px) {
   .contact-section {
-    padding: 40px 10px;
+    padding: 40px 20px;
   }
 
   .contact-form h1 {
@@ -1603,9 +1655,9 @@ textarea {
   margin: 0 auto 20px;
 }
 .checkbox input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
- margin-bottom: 0.4rem;
+  width: 25px;
+  height: 25px;
+ margin-bottom: 0.5rem;
 }
 
 .subscribe-box input,
@@ -1624,6 +1676,17 @@ textarea {
   .checkbox label {
     font-size: 0.95rem;
   }
+  .custom-alert1{
+     bottom:40%;
+  right: 20%;
+  }
+  
+}
+@media screen and (max-width:400px) {
+  .checkbox label{
+    padding-top: 1.5rem;
+  }
+
 }
 @media screen and (min-width:993px){
   .contact-container {
@@ -1635,13 +1698,13 @@ textarea {
     max-width: 600px;
   }
   .contact-form h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   .contact-form label{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
    .contact-form input{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
    }
    .checkbox{
      font-size: 0.5rem;
@@ -1650,6 +1713,7 @@ textarea {
    .checkbox input[type="checkbox"]{
      width:24px;
     height:24px;
+    margin-bottom: 1.2rem;
    }
    .submit-btn, .reset-btn{
     font-size: 1.3rem;
@@ -1665,10 +1729,10 @@ textarea {
   margin-bottom: 20px;
 }
  .newsletter h1{
-  font-size: 3.3rem;
+  font-size: 2.8rem;
  }
  .newsletter p{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
    max-width: 650px;
  }
  .subscribe-box input{
@@ -1680,9 +1744,13 @@ textarea {
   padding:12px 40px;
  }
  .custom-alert{
-  top:50%;
+  bottom:50%;
   left:20%;
   transform: translateY(-50%);
+ }
+ .custom-alert1{
+  bottom:50%;
+  right: 32%;
  }
 }
 
@@ -1712,8 +1780,8 @@ textarea {
  }
    
 #qa-side-panel.expanded {
-    width: min(50vw, 480px);
-    height: 70vh;
+    width: min(50vw, 380px);
+    height: 48vh;
     min-height: 400px;
     /* Glassmorphism properties for the expanded panel */
     background: rgba(255, 255, 255, 0.15);;
@@ -1736,7 +1804,7 @@ textarea {
     }
         #qa-side-panel.expanded {
         width: 90vw;
-        height:70vh;
+        height:50vh;
       /*  height: calc(95vh - env(safe-area-inset-bottom)); /* Use 95vh minus safe area for dynamic height */
         min-height: unset; /* Remove min-height override on mobile */
         bottom: env(safe-area-inset-bottom, 5px); /* Anchor to bottom, respect safe area */
@@ -1909,7 +1977,7 @@ textarea {
 .footer {
   background: #25A941;
   color: #fff;
-  padding: 40px 10%;
+  padding: 40px 0%;
   font-family: 'Poppins', sans-serif;
  
 }
@@ -1921,16 +1989,10 @@ textarea {
   justify-content: center;
  /* flex-wrap: wrap;*/
   margin-block: 20px;
+ 
 
 }
-/*
-.footer-left{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  margin: 0 auto;
- }*/
+
  .footer-left {
   text-align: center;
 }
@@ -1939,28 +2001,38 @@ textarea {
   right: 40px;               /* keeps it on the right side */
   top: 50%;
   transform: translateY(-50%);
-  text-align: right;
+  text-align: center;
 }
 .footer-left h2, .footer-right h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-block: 10px;
+  font-weight: 700;
+ 
 }
-
+.social-icons{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .social-icons a {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #25A941;
   width:1.8rem;
   height:1.8rem;
   text-align: center;
   border-radius: 6px;
   background: #fff;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .social-icons a:hover {
-  color: #d1f7dc;
+  color: #116423;
+  text-decoration: none;
+  transform:scale(1.06);
 }
 /*
 .footer-right{
@@ -1985,7 +2057,7 @@ textarea {
 
 .playstore-btn img {
   width: 20px;
-  margin-right: 8px;
+   margin-right: 8px;
 }
 
 .playstore-btn:hover {
@@ -1996,7 +2068,7 @@ textarea {
 .footer-divider {
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
-  margin: 20px 0;
+  margin: 20px 0px;
 }
 
 .footer-bottom {
@@ -2053,6 +2125,9 @@ textarea {
   .footer-top {
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
    
   }
   .footer-left {
@@ -2062,29 +2137,44 @@ textarea {
  
   .footer-right {
   position: absolute;
-  right: 0%;               /* keeps it on the right side */
-  top: 80%;
-  transform: translate(-50%, -50%);
+  left: 50%;               /* keeps it on the right side */
+  top: 50%;
+  transform: translateX(-50%);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin:0 auto;
+  text-wrap: nowrap;
+ 
 }
   .footer-contact{
     display:flex;
     flex-direction: column;
     gap:5px;
   }
-  .footer-left h2,.footer-right h2{
-    font-size: 1.5rem;
-  }
+  
+  .social-icons a {
+
+  width:1.8rem;
+  height:1.8rem;
+  font-size: 2.5rem;
+  
+}
 }
 @media screen and (min-width:993px) {
+  .footer {
+    padding: 40px 5%;
+  }
   .footer-left h2 {
     font-size: 1.9rem;
   }
   .social-icons a {
-    width:2.2rem;
-    height:2.2rem;
-    font-size: 1.3rem;
+    width:2rem;
+    height:2rem;
+    font-size: 2.6rem;
+   
   }
   
 .playstore-btn {

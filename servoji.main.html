@@ -33,7 +33,7 @@
  
 <section class="car-wrapper">
    <video class="background-video" id="backgroundVideo"  autoplay muted loop playsinline>
-    <source src="images/servoji_EXPORT1.mp4" type="video/mp4">
+    <source src="images/Servoji EXPORT1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
@@ -122,7 +122,7 @@
 
 <section class="discover" id="discover">
   <div class="discover_img">
-    <h1 class="discover_title">Discover Our Car Wash Services</h1>
+    <h1 class="discover_title">Discover Our Services</h1>
     <img src="images/Billboards.png" alt="">
   </div>
 </section>
@@ -280,17 +280,14 @@
       <div class="faq-item">
         <h3>What types of carwashes can I book through servoji ?</h3>
         <p>
-          We offer a wide range of services, including exterior washes,
-          interior detailing, full detailing, waxing, tyre care, and
-          eco-friendly options.
+          We offer a wide range of services, including Dry Cleaning(Quick Service), Exterior Foam Wash, Full Wash(Exterior + Interior) and Interior Deep Cleaning.
         </p>
       </div>
 
       <div class="faq-item">
         <h3>How do I find car washes in my area?</h3>
         <p>
-          Simply enter your city or postal code in the search bar on our
-          homepage to see available services near you.
+         Simply select your service, enter your society address, add your vehicle details, and book your service.
         </p>
       </div>
     </div>
@@ -389,7 +386,7 @@
   </div>
 </section>
   
- <div id="qa-side-panel" class="expanded">
+ <div id="qa-side-panel">
         <button id="qa-side-panel-toggle-btn" fdprocessedid="odseu2">
          
                <span class="chat-icon hidden"><i class="fa-solid fa-message"></i></span>  
@@ -568,7 +565,7 @@
 
      <a href="https://www.blisstechsolutions.in" target="_blank" class="contact-item">
         <i class="fa-solid fa-globe"></i>
-        www.blisstechsolutions.in  |
+        www.blisstechsolutions.in   |
     </a>
 
 
@@ -625,7 +622,13 @@
 /* === QA Panel Script (Chat Only) === */
 document.addEventListener("DOMContentLoaded", function() {
     const qaSidePanel = document.getElementById('qa-side-panel');
-    const qaToggleBtn = document.getElementById('qa-side-panel-toggle-btn');
+
+// Always start closed on page load
+    if (qaSidePanel.classList.contains("expanded")) {
+        qaSidePanel.classList.remove("expanded");
+    }
+
+  const qaToggleBtn = document.getElementById('qa-side-panel-toggle-btn');
     const qaPanelContent = document.getElementById('qa-panel-content');
     const qaHistory = document.getElementById('qa-message-history');
     const qaCurrentQuestionArea = document.getElementById('qa-current-question-area');
@@ -918,6 +921,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // --- Panel Toggle Logic ---
+  
+    let chatOpenedOnce = false;
+
     qaToggleBtn.addEventListener('click', function() {
         qaSidePanel.classList.toggle('expanded');
         const iconChat = qaToggleBtn.querySelector('.chat-icon');
@@ -925,12 +931,23 @@ document.addEventListener("DOMContentLoaded", function() {
         iconChat.classList.toggle('hidden');
         iconClose.classList.toggle('hidden');
 
+/*
         if (qaSidePanel.classList.contains('expanded')) {
             if (qaHistory.children.length === 0) {
                 appendMessage("Hello! I'm your Blisstech Assistant. How can I help you today?", 'bot');
                 setTimeout(displayQuestion, 500);
             } else displayQuestion();
-        }
+        } */  
+
+        // Only run initialization once
+    if (!chatOpenedOnce && qaSidePanel.classList.contains('expanded')) {
+        chatOpenedOnce = true;
+        localStorage.removeItem("qaData");
+        localStorage.removeItem("qaCurrentIndex");
+        
+        appendMessage("Hello! I'm your Blisstech Assistant. How can I help you today?", 'bot');
+        setTimeout(displayQuestion, 500);
+    }
     });
 
     // --- External Navbar Chat Icon ---

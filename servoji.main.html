@@ -8,7 +8,7 @@
 
 <!-- Open Graph Tags (For WhatsApp, Facebook, LinkedIn) -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="SerVoji - Get Professional Services at your doorstep.">
+<meta property="og:title" content="Servoji - Get Professional Services at your doorstep.">
 <meta property="og:description" content="Book expert car wash detailing and professional car services at your doorstep.">
 <meta property="og:image" content="https://servoji.com/images/servoji-logo.png"> 
 <meta property="og:url" content="https://servoji.com">
@@ -100,25 +100,25 @@
           <p class="heading">Empower gig workers to drive positive social change.<br>
           Efficient service, minimum disruption.</p>
           <ul>
-            <li>Rapid Service</li>
-            <li>Quality Training</li>
-            <li>Boosting gig Economy</li>
+            <li><img src="images/tick-mark.png" alt="">Rapid Service</li>
+            <li> <img src="images/tick-mark.png" alt="">Quality Training</li>
+            <li><img src="images/tick-mark.png" alt="">Boosting gig Economy</li>
           </ul>
         </div>
 
         <div class="text-block">
           <p class="heading">Certified & Trained Partners</p>
           <ul>
-            <li>On demand Bookings</li>
-            <li>Certified Professionals</li>
-            <li>Carpool Cleaning & Subscriptions</li>
+            <li> <img src="images/tick-mark.png" alt="">On demand Bookings</li>
+            <li> <img src="images/tick-mark.png" alt="">Certified Professionals</li>
+            <li> <img src="images/tick-mark.png" alt="">Carpool Cleaning & Subscriptions</li>
           </ul>
         </div>
 
         <div class="text-block">
           <p class="heading">Flexible Plans for Every Car Owner</p>
           <ul>
-            <li>Affordable plans and custom services designed to suit urban lifestyles and working professionals.</li>
+            <li> <img src="images/tick-mark.png" alt="">Affordable plans and custom services designed to suit urban lifestyles and working professionals.</li>
           </ul>
         </div>
       </div>
@@ -224,7 +224,7 @@
     </div>
 
     <div class="feature-card">
-      <img src="images/why_img4.png" alt="Real Customer Reviews" class="real_customer_img">
+      <img src="images/why-choose.png" alt="Real Customer Reviews" class="real_customer_img">
       <h3>Real Customer Reviews</h3>
       <p>Make informed decisions by reading genuine reviews and ratings from other car owners.</p>
     </div>
@@ -237,7 +237,8 @@
 
     <div class="feature-card">
       <img src="images/why_img6.png" alt="Wide Selection of Services">
-      <h3>Wide Selection of Services</h3>
+   <!--   <h3>Wide Selection of Services</h3>--> 
+       <h3>Wide Services</h3>
       <p>Access a diverse range of car wash services to meet your specific needs and preferences.</p>
     </div>
 
@@ -296,7 +297,7 @@
       <div class="faq-item">
         <h3>What types of carwashes can I book through servoji ?</h3>
         <p>
-          We offer a wide range of services, including Dry Cleaning(Quick Service), Exterior Foam Wash, Full Wash(Exterior + Interior) and Interior Deep Cleaning.
+          We offer a wide range of services, including Dry Cleaning (Quick Service), Exterior Foam Wash, Full Wash (Exterior + Interior) and Interior Deep Cleaning.
         </p>
       </div>
 
@@ -413,12 +414,24 @@
         <div id="qa-panel-content">
             <div class="qa-container">
                 <div id="qa-message-history" class="qa-message-history">
-                    <div class="qa-message bot"><span class="qa-message-bubble">Hello! I'm your Blisstech Assistant. How can I help you today?</span></div><div class="qa-message bot"><span class="qa-message-bubble">May I help you?</span></div></div> 
-                <div id="qa-current-question-area" class="qa-current-question-container"><div class="qa-input-area"><input type="text" id="qa-input-initialGreeting" placeholder="Type 'yes' or 'no'" class="flex-grow px-4 py-2 border border-gray-300 rounded-l-xl focus:outline-none focus:ring-2 focus:ring-blisstech-primary" fdprocessedid="sr9fic"><button class="bg-blisstech-primary text-white px-6 py-2 rounded-r-xl font-semibold hover:bg-indigo-700 transition duration-200" fdprocessedid="idgdx2">Send</button></div></div> 
+                    <div class="qa-message bot"><span class="qa-message-bubble">Hello! I'm your Blisstech Assistant. How can I help you today?</span>
+                    </div>
+                    <div class="qa-message bot"><span class="qa-message-bubble">May I help you?</span>
+                    </div>
+                  </div> 
+                <div id="qa-current-question-area" class="qa-current-question-container">
+                  <div class="qa-input-area">
+                    <input type="text" id="qa-input-initialGreeting" placeholder="Type 'yes' or 'no'" class="flex-grow px-4 py-2 border border-gray-300 rounded-l-xl focus:outline-none focus:ring-2 focus:ring-blisstech-primary" fdprocessedid="sr9fic">
+                    <button class="bg-blisstech-primary text-white px-6 py-2 rounded-r-xl font-semibold hover:bg-indigo-700 transition duration-200" fdprocessedid="idgdx2">Send</button>
+                  </div>
+                </div> 
                 <div class="qa-input-area static-input-bar" id="qa-static-bar" style="display: none;">
                         <input type="text" placeholder="Ask a question..." class="flex-grow px-4 py-3 border border-gray-300 rounded-l-xl focus:outline-none focus:ring-2 focus:ring-blisstech-primary" fdprocessedid="sczka">
                         <button class="bg-blisstech-primary text-white px-6 py-3 rounded-r-xl font-semibold hover:bg-indigo-700 transition duration-200">Send</button>
                 </div>
+
+
+
             </div>
         </div>
     </div> 
@@ -630,360 +643,6 @@
     }
   });
 </script>
-
-
-
-
-<script>
-/* === QA Panel Script (Chat Only) === */
-document.addEventListener("DOMContentLoaded", function() {
-    const qaSidePanel = document.getElementById('qa-side-panel');
-
-// Always start closed on page load
-    if (qaSidePanel.classList.contains("expanded")) {
-        qaSidePanel.classList.remove("expanded");
-    }
-
-  const qaToggleBtn = document.getElementById('qa-side-panel-toggle-btn');
-    const qaPanelContent = document.getElementById('qa-panel-content');
-    const qaHistory = document.getElementById('qa-message-history');
-    const qaCurrentQuestionArea = document.getElementById('qa-current-question-area');
-    const qaStaticBar = document.getElementById('qa-static-bar');
-
-    // --- Q&A Questions ---
-    const qaQuestions = [
-        {
-            id: "initialGreeting",
-            text: "May I help you?",
-            type: "text_input_yes_no",
-            placeholder: "Type 'yes' or 'no'"
-        },
-        {
-            id: "userName",
-            text: "Great! Before we proceed, could you please tell me your name? This helps me offer a more personalized experience.",
-            type: "text_input",
-            placeholder: "e.g., John Doe"
-        },
-        {
-            id: "contactPreference",
-            text: "Thanks, [userName]! How would you prefer we get in touch for details? You can provide a phone number or an email, or both. Or, you can skip if you prefer we only use the details provided at the end of the chat.",
-            type: "custom_contact_input",
-            placeholder: { phone: "Your phone number (optional)", email: "Your email (optional)" }
-        },
-        {
-            id: "serviceType",
-            text: "What type of service are you interested in today?",
-            type: "buttons",
-            options: [
-                { display: "Platform & Hosting", value: "Hosting" },
-                { display: "UI/UX & Design", value: "UI/UX" },
-                { display: "Ecommerce & Web Help", value: "Ecommerce" },
-                { display: "Deployment & Troubleshooting", value: "Deployment" },
-                { display: "Other", value: "Other" }
-            ]
-        },
-        {
-            id: "projectNeeds",
-            text: "Could you briefly describe your project needs related to [Previous Answer]?",
-            type: "text_input",
-            placeholder: "e.g., I need a secure server for my new SaaS app..."
-        },
-        {
-            id: "finalContactConfirm",
-            text: "Thank you for providing your information! Shall I submit your inquiry? We'll be in touch shortly.",
-            type: "buttons",
-            options: [
-                { display: "Submit Inquiry", value: "submit" },
-                { display: "Cancel Chat", value: "cancel" }
-            ]
-        }
-    ];
-
-    let currentQuestionIndex = parseInt(localStorage.getItem('qaCurrentIndex') || '0');
-    let capturedAnswers = JSON.parse(localStorage.getItem('qaData') || '{}');
-
-    // --- Helper: Append Message ---
-    function appendMessage(text, sender) {
-        const messageDiv = document.createElement('div');
-        messageDiv.classList.add('qa-message', sender);
-        messageDiv.innerHTML = `<span class="qa-message-bubble">${text}</span>`;
-        qaHistory.appendChild(messageDiv);
-        qaHistory.scrollTop = qaHistory.scrollHeight;
-    }
-
-    // --- Display Question ---
-    function displayQuestion() {
-        qaCurrentQuestionArea.innerHTML = '';
-        qaStaticBar.style.display = 'none';
-
-        if (currentQuestionIndex < qaQuestions.length) {
-            const q = qaQuestions[currentQuestionIndex];
-            let questionText = q.text;
-
-            if (q.id === "contactPreference" && capturedAnswers.userName) {
-                questionText = questionText.replace('[userName]', capturedAnswers.userName);
-            } else if (q.id === "projectNeeds" && capturedAnswers.serviceType) {
-                questionText = questionText.replace('[Previous Answer]', capturedAnswers.serviceType);
-            }
-
-            const lastBotMessageText = qaHistory.lastChild && qaHistory.lastChild.classList.contains('bot') 
-                ? qaHistory.lastChild.querySelector('.qa-message-bubble').textContent 
-                : '';
-
-            if (lastBotMessageText.trim() !== questionText.trim()) {
-                appendMessage(questionText, 'bot');
-            }
-
-            if (q.type === "buttons") {
-                const buttonsDiv = document.createElement('div');
-                buttonsDiv.className = 'flex flex-col gap-2 mt-4';
-                q.options.forEach(option => {
-                    const button = document.createElement('button');
-                    button.classList.add('qa-question-button');
-                    button.textContent = option.display;
-                    button.dataset.value = option.value;
-                    button.onclick = () => handleAnswer(q.id, option.value, option.display);
-                    buttonsDiv.appendChild(button);
-                });
-                qaCurrentQuestionArea.appendChild(buttonsDiv);
-
-            } else if (q.type === "text_input" || q.type === "text_input_yes_no") {
-                const inputDiv = document.createElement('div');
-                inputDiv.className = 'qa-input-area';
-                const inputField = document.createElement('input');
-                inputField.type = 'text';
-                inputField.id = `qa-input-${q.id}`;
-                inputField.placeholder = q.placeholder;
-                inputField.className = 'flex-grow px-4 py-2 border border-gray-300 rounded-l-xl focus:outline-none focus:ring-2 focus:ring-blisstech-primary';
-
-                const sendButton = document.createElement('button');
-                sendButton.textContent = "Send";
-                sendButton.className = 'bg-blisstech-primary text-white px-6 py-2 rounded-r-xl font-semibold hover:bg-indigo-700 transition duration-200';
-                sendButton.onclick = () => handleAnswer(q.id, inputField.value);
-
-                inputDiv.appendChild(inputField);
-                inputDiv.appendChild(sendButton);
-                qaCurrentQuestionArea.appendChild(inputDiv);
-                inputField.focus();
-
-            } else if (q.type === "custom_contact_input") {
-                const contactInputDiv = document.createElement('div');
-                contactInputDiv.className = 'flex flex-col gap-3 mt-4';
-
-                // Phone input
-                const phoneInputContainer = document.createElement('div');
-                phoneInputContainer.className = 'flex';
-                const phoneCodeSelect = document.createElement('select');
-                phoneCodeSelect.className = 'rounded-l-xl border-2 border-gray-200 bg-white px-4 py-2 text-gray-700';
-                const countryCodes = ["+91", "+1", "+44", "+61", "+81"];
-                countryCodes.forEach(code => {
-                    const option = document.createElement('option');
-                    option.value = code;
-                    option.textContent = code;
-                    phoneCodeSelect.appendChild(option);
-                });
-
-                const phoneInputField = document.createElement('input');
-                phoneInputField.type = 'tel';
-                phoneInputField.id = 'qa-input-phone';
-                phoneInputField.placeholder = q.placeholder.phone;
-                phoneInputField.className = 'w-full rounded-r-xl border-2 border-gray-200 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blisstech-primary';
-                phoneInputContainer.appendChild(phoneCodeSelect);
-                phoneInputContainer.appendChild(phoneInputField);
-                contactInputDiv.appendChild(phoneInputContainer);
-
-                // Email input
-                const emailInputField = document.createElement('input');
-                emailInputField.type = 'email';
-                emailInputField.id = 'qa-input-email';
-                emailInputField.placeholder = q.placeholder.email;
-                emailInputField.className = 'w-full px-4 py-2 rounded-xl border-2 border-gray-200 focus:outline-none focus:ring-2 focus:ring-blisstech-primary';
-                contactInputDiv.appendChild(emailInputField);
-
-                // Buttons
-                const buttonsDiv = document.createElement('div');
-                buttonsDiv.className = 'flex flex-col sm:flex-row gap-2 mt-4';
-
-                const continueButton = document.createElement('button');
-                continueButton.textContent = "Continue";
-                continueButton.classList.add('qa-question-button', 'bg-blisstech-primary', 'hover:bg-indigo-700');
-                continueButton.onclick = () => handleContactInput(phoneCodeSelect.value + ' ' + phoneInputField.value, emailInputField.value);
-                buttonsDiv.appendChild(continueButton);
-
-                const skipButton = document.createElement('button');
-                skipButton.textContent = "Skip for now";
-                skipButton.classList.add('qa-question-button', 'bg-gray-500', 'hover:bg-gray-600');
-                skipButton.onclick = () => handleContactInput('', '', true);
-                buttonsDiv.appendChild(skipButton);
-
-                contactInputDiv.appendChild(buttonsDiv);
-                qaCurrentQuestionArea.appendChild(contactInputDiv);
-            }
-        } else {
-            const finalQuestion = qaQuestions.find(q => q.id === "finalContactConfirm");
-            if (finalQuestion) {
-                currentQuestionIndex = qaQuestions.indexOf(finalQuestion);
-                localStorage.setItem('qaCurrentIndex', currentQuestionIndex.toString());
-                displayQuestion();
-            } else {
-                appendMessage("Thank you for your responses. Your inquiry is being submitted.", 'bot');
-                setTimeout(() => handleSubmit(), 1000);
-            }
-        }
-    }
-
-    // --- Handle Answers ---
-    function handleAnswer(questionId, answerValue, displayValue = answerValue) {
-        appendMessage(displayValue, 'user');
-
-        if (questionId === "initialGreeting") {
-            const normalized = answerValue.toLowerCase().trim();
-            if (normalized === 'yes' || normalized === 'y') {
-                capturedAnswers[questionId] = answerValue;
-                currentQuestionIndex++;
-                localStorage.setItem('qaData', JSON.stringify(capturedAnswers));
-                localStorage.setItem('qaCurrentIndex', currentQuestionIndex.toString());
-                setTimeout(displayQuestion, 1000);
-            } else {
-                appendMessage("No problem! Feel free to ask if you change your mind.", 'bot');
-                setTimeout(() => {
-                    qaSidePanel.classList.remove('expanded');
-                    resetChatSession();
-                }, 2000);
-            }
-        } else if (questionId === "finalContactConfirm") {
-            if (answerValue === 'submit') handleSubmit();
-            else if (answerValue === 'cancel') {
-                appendMessage("No problem! The chat has been cancelled.", 'bot');
-                setTimeout(() => {
-                    qaSidePanel.classList.remove('expanded');
-                    resetChatSession();
-                }, 2000);
-            }
-        } else {
-            capturedAnswers[questionId] = answerValue;
-            localStorage.setItem('qaData', JSON.stringify(capturedAnswers));
-            currentQuestionIndex++;
-            localStorage.setItem('qaCurrentIndex', currentQuestionIndex.toString());
-            setTimeout(displayQuestion, 1000);
-        }
-    }
-
-    function handleContactInput(phone, email, skip = false) {
-        if (!skip && phone.trim() === '' && email.trim() === '') {
-            appendMessage("Please provide contact info or skip.", 'bot');
-            return;
-        }
-
-        capturedAnswers.contactPhone = phone || 'Not provided';
-        capturedAnswers.contactEmail = email || 'Not provided';
-        appendMessage(skip ? "Skipped contact details." : `Phone: ${phone}, Email: ${email}`, 'user');
-
-        currentQuestionIndex++;
-        localStorage.setItem('qaData', JSON.stringify(capturedAnswers));
-        localStorage.setItem('qaCurrentIndex', currentQuestionIndex.toString());
-        setTimeout(displayQuestion, 1000);
-    }
-
-    // --- Submit to Google Script ---
-    function handleSubmit() {
-        console.log("Captured Answers:", capturedAnswers);
-
-        const userName = capturedAnswers.userName || 'Chatbot User';
-        const serviceType = capturedAnswers.serviceType || 'Not specified';
-        const projectNeeds = capturedAnswers.projectNeeds || 'Not specified';
-        const contactPhone = capturedAnswers.contactPhone || 'Not provided';
-        const contactEmail = capturedAnswers.contactEmail || 'Not provided';
-
-        const messageString = `
-        Inquiry from Chatbot:
-        Name: ${userName}
-        Service Type: ${serviceType}
-        Project Needs: ${projectNeeds}
-        Phone: ${contactPhone}
-        Email: ${contactEmail}
-        `.trim();
-
-        const dataToSend = new URLSearchParams({
-            name: userName,
-            email: contactEmail !== 'Not provided' ? contactEmail : 'chatbot_inquiry@blisstechsolutions.in',
-            phone: contactPhone !== 'Not provided' ? contactPhone : '',
-            country: 'Chatbot Inquiry',
-            message: messageString,
-            terms: 'Yes (via Chatbot)'
-        });
-
-        const scriptURL = "https://script.google.com/macros/s/AKfycbzv-vuP4nx3avtiyT20h6ukvJj_hXVggn4TVW-6fq9uCY0OSYNfgE9iB7SyU_cN0SXMlw/exec";
-
-        appendMessage("Submitting your inquiry...", 'bot');
-        fetch(scriptURL, { method: 'POST', body: dataToSend })
-            .then(res => res.ok ? appendMessage("Inquiry submitted successfully!", 'bot')
-                                : appendMessage("Error submitting inquiry.", 'bot'))
-            .finally(() => {
-                setTimeout(() => {
-                    resetChatSession();
-                    qaSidePanel.classList.remove('expanded');
-                }, 3000);
-            });
-    }
-
-    function resetChatSession() {
-        localStorage.removeItem('qaData');
-        localStorage.removeItem('qaCurrentIndex');
-        currentQuestionIndex = 0;
-        capturedAnswers = {};
-        qaHistory.innerHTML = '';
-        qaStaticBar.style.display = 'flex';
-    }
-
-    // --- Panel Toggle Logic ---
-  
-    let chatOpenedOnce = false;
-
-    qaToggleBtn.addEventListener('click', function() {
-        qaSidePanel.classList.toggle('expanded');
-        const iconChat = qaToggleBtn.querySelector('.chat-icon');
-        const iconClose = qaToggleBtn.querySelector('.close-icon');
-        iconChat.classList.toggle('hidden');
-        iconClose.classList.toggle('hidden');
-
-/*
-        if (qaSidePanel.classList.contains('expanded')) {
-            if (qaHistory.children.length === 0) {
-                appendMessage("Hello! I'm your Blisstech Assistant. How can I help you today?", 'bot');
-                setTimeout(displayQuestion, 500);
-            } else displayQuestion();
-        } */  
-
-        // Only run initialization once
-    if (!chatOpenedOnce && qaSidePanel.classList.contains('expanded')) {
-        chatOpenedOnce = true;
-        localStorage.removeItem("qaData");
-        localStorage.removeItem("qaCurrentIndex");
-        
-        appendMessage("Hello! I'm your Blisstech Assistant. How can I help you today?", 'bot');
-        setTimeout(displayQuestion, 500);
-    }
-    });
-
-    // --- External Navbar Chat Icon ---
-    const chatNavbarIcon = document.getElementById("chatIcon");
-    if (chatNavbarIcon) {
-        chatNavbarIcon.addEventListener("click", (e) => {
-            e.preventDefault();
-            const qaSidePanel = document.getElementById("qa-side-panel");
-            if (!qaSidePanel.classList.contains("expanded")) {
-                qaSidePanel.classList.add("expanded");
-                if (qaHistory.children.length === 0) {
-                    appendMessage("Hello! I'm your Blisstech Assistant. How can I help you today?", 'bot');
-                    setTimeout(displayQuestion, 500);
-                }
-            }
-        });
-    }
-});
-</script>
-
 
 <script>
   // Get modal and elements
@@ -1208,6 +867,428 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </script>
 
+<script>
+/* === Clean QA Panel Script (Chat Only) === */
+document.addEventListener("DOMContentLoaded", function () {
+  // --- Config ---
+  const SCRIPT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzAHC6sSzWdJNsGslA66n4KfGqvjLNDgYWc9bT9iqbxiNQlvlNpysAmsmwDbY_jy0xK/exec";
+
+  // --- Elements ---
+  const qaSidePanel = document.getElementById("qa-side-panel");
+  const qaToggleBtn = document.getElementById("qa-side-panel-toggle-btn");
+  const qaPanelContent = document.getElementById("qa-panel-content");
+  const qaHistory = document.getElementById("qa-message-history");
+  const qaCurrentQuestionArea = document.getElementById("qa-current-question-area");
+  const qaStaticBar = document.getElementById("qa-static-bar");
+
+  // Ensure panel starts closed
+  qaSidePanel.classList.remove("expanded");
+
+  // --- Questions ---
+  const qaQuestions = [
+    { id: "initialGreeting", text: "May I help you?", type: "text_input_yes_no", placeholder: "Type 'yes' or 'no'" },
+    { id: "userName", text: "Great! Before we proceed, could you please tell me your name? This helps me offer a more personalized experience.", type: "text_input", placeholder: "e.g., John Doe" },
+    { id: "contactPreference", text: "Thanks, [userName]! How would you prefer we get in touch for details? You can provide a phone number or an email, or both. Or, you can skip if you prefer we only use the details provided at the end of the chat.", type: "custom_contact_input", placeholder: { phone: "Your phone number (optional)", email: "Your email (optional)" } },
+    { id: "serviceType", text: "What type of service are you interested in today?", type: "buttons", options: [{ display: "Platform & Hosting", value: "Hosting" }, { display: "UI/UX & Design", value: "UI/UX" }, { display: "Ecommerce & Web Help", value: "Ecommerce" }, { display: "Deployment & Troubleshooting", value: "Deployment" }, { display: "Other", value: "Other" }] },
+    { id: "projectNeeds", text: "Could you briefly describe your project needs related to [Previous Answer]?", type: "text_input", placeholder: "e.g., I need a secure server for my new SaaS app..." },
+    { id: "finalContactConfirm", text: "Thank you for providing your information! Shall I submit your inquiry? We'll be in touch shortly.", type: "buttons", options: [{ display: "Submit Inquiry", value: "submit" }, { display: "Cancel Chat", value: "cancel" }] }
+  ];
+
+  // --- State persisted (optional) ---
+  let currentQuestionIndex = parseInt(localStorage.getItem("qaCurrentIndex") || "0", 10);
+  let capturedAnswers = JSON.parse(localStorage.getItem("qaData") || "{}");
+  let submissionInProgress = false;
+
+  // --- Helpers ---
+  function saveState() {
+    localStorage.setItem("qaCurrentIndex", currentQuestionIndex.toString());
+    localStorage.setItem("qaData", JSON.stringify(capturedAnswers));
+  }
+  function clearState() {
+    localStorage.removeItem("qaCurrentIndex");
+    localStorage.removeItem("qaData");
+    currentQuestionIndex = 0;
+    capturedAnswers = {};
+  }
+
+  function appendMessage(text, sender = "bot") {
+    const messageDiv = document.createElement("div");
+    messageDiv.className = `qa-message ${sender}`;
+    messageDiv.innerHTML = `<span class="qa-message-bubble">${escapeHtml(text)}</span>`;
+    qaHistory.appendChild(messageDiv);
+    qaHistory.scrollTop = qaHistory.scrollHeight;
+  }
+
+  // Prevent XSS by escaping
+  function escapeHtml(str) {
+    if (typeof str !== "string") return str;
+    return str.replace(/[&<>"']/g, function (m) {
+      return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[m];
+    });
+  }
+
+  // --- UI open/close / reset ---
+  function openChatBox() {
+    qaSidePanel.classList.add("expanded");
+    // Reset presentation layer so static bar shows correctly
+    qaCurrentQuestionArea.style.display = "none";
+    qaStaticBar.style.display = "flex";
+    // Show initial messages only if history is empty
+    if (!qaHistory.children.length) {
+      appendMessage("Hello! I'm your Blisstech Assistant. How can I help you today?", "bot");
+      appendMessage("May I help you?", "bot");
+      // Make sure to start from first question if no state
+      if (!localStorage.getItem("qaData")) {
+        currentQuestionIndex = 0;
+        capturedAnswers = {};
+        saveState();
+      }
+    }
+    // If we have progress and the currentQuestionIndex points into the flow, show question area
+    if (currentQuestionIndex < qaQuestions.length && !submissionInProgress) {
+      setTimeout(displayQuestion, 250);
+    }
+  }
+
+  function closeChatBox() {
+    qaSidePanel.classList.remove("expanded");
+    // Do not modify input visibility here (we do that on open)
+  }
+
+  // --- Display question UI based on currentQuestionIndex ---
+  function displayQuestion() {
+    // if submission is running, don't show question UI
+    if (submissionInProgress) return;
+
+    qaCurrentQuestionArea.innerHTML = "";
+    qaCurrentQuestionArea.style.display = "block";
+    qaStaticBar.style.display = "none";
+
+    if (currentQuestionIndex < qaQuestions.length) {
+      const q = qaQuestions[currentQuestionIndex];
+      let questionText = q.text;
+
+      if (q.id === "contactPreference" && capturedAnswers.userName) {
+        questionText = questionText.replace("[userName]", capturedAnswers.userName);
+      } else if (q.id === "projectNeeds" && capturedAnswers.serviceType) {
+        questionText = questionText.replace("[Previous Answer]", capturedAnswers.serviceType);
+      }
+
+      // Avoid duplicate bot message
+      const lastBot = Array.from(qaHistory.children).reverse().find(el => el.classList.contains("bot"));
+      const lastBotText = lastBot ? lastBot.querySelector(".qa-message-bubble").textContent.trim() : "";
+      if (lastBotText !== questionText.trim()) appendMessage(questionText, "bot");
+
+      // Build UI per type
+      if (q.type === "buttons") {
+        const buttonsDiv = document.createElement("div");
+        buttonsDiv.className = "flex flex-col gap-2 mt-4";
+        q.options.forEach(option => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "qa-question-button";
+          btn.textContent = option.display;
+          btn.dataset.value = option.value;
+          btn.onclick = () => handleAnswer(q.id, option.value, option.display);
+          buttonsDiv.appendChild(btn);
+        });
+        qaCurrentQuestionArea.appendChild(buttonsDiv);
+
+      } else if (q.type === "text_input" || q.type === "text_input_yes_no") {
+        const wrapper = document.createElement("div");
+        wrapper.className = "qa-input-area";
+
+        const input = document.createElement("input");
+        input.type = "text";
+        input.id = `qa-input-${q.id}`;
+        input.placeholder = q.placeholder || "";
+        input.className = "qu-input-area-input flex-grow px-4 py-2 border rounded-l-xl";
+
+        const sendBtn = document.createElement("button");
+        sendBtn.type = "button";
+        sendBtn.textContent = "Send";
+        sendBtn.className = "bg-blisstech-primary text-white px-6 py-2 rounded-r-xl";
+        sendBtn.onclick = () => {
+          const val = input.value || "";
+          if (q.type === "text_input_yes_no") {
+            const n = val.toLowerCase().trim();
+            if (!n) return appendMessage("Please type 'yes' or 'no'.", "bot");
+          }
+          handleAnswer(q.id, input.value);
+        };
+
+        input.addEventListener("keypress", function (e) {
+          if (e.key === "Enter") sendBtn.click();
+        });
+
+        wrapper.appendChild(input);
+        wrapper.appendChild(sendBtn);
+        qaCurrentQuestionArea.appendChild(wrapper);
+
+        // auto-focus small delay
+        setTimeout(() => input.focus(), 50);
+
+      } 
+      else if (q.type === "custom_contact_input") {
+ // phone Input   
+        const contactDiv = document.createElement("div");
+        contactDiv.className = "contact_flex flex-col gap-3 mt-1";
+
+        const phoneRow = document.createElement("div");
+        phoneRow.className = "phone_flex";
+
+        const select = document.createElement("select");
+        select.className= "phone_flex_select";
+
+        ["+91", "+1", "+44", "+61", "+81"].forEach(code => {
+          const o = document.createElement("option");
+          o.value = code; 
+          o.textContent = code;
+          select.appendChild(o);
+        });
+        const phoneInput = document.createElement("input");
+        phoneInput.className="phone_flex_input";
+        phoneInput.type = "tel"; 
+        phoneInput.id = "qa-input-phone"; phoneInput.placeholder = q.placeholder.phone || "";
+        phoneRow.appendChild(select); 
+        phoneRow.appendChild(phoneInput);
+        contactDiv.appendChild(phoneRow);
+
+ 
+
+// Email
+        const emailInput = document.createElement("input");
+        emailInput.type = "email";
+         emailInput.id = "qa-input-email"; emailInput.placeholder = q.placeholder.email || "";
+         contactDiv.appendChild(emailInput);
+  
+   // country 
+       const countryRow = document.createElement("div");
+        countryRow.className= "country_flex";
+
+        const countrySelect= document.createElement("select");
+        countrySelect.id="country";
+        countrySelect.className="country_select";
+        
+         ["India", "USA", "UK"].forEach(c => {
+           const opt = document.createElement("option");
+           opt.value= c;
+           opt.textContent = c;
+           countrySelect.appendChild(opt);
+         });
+          countryRow.appendChild(countrySelect);
+        contactDiv.appendChild(countryRow);
+
+// buttons
+        const btnRow = document.createElement("div");
+        btnRow.className = "flex_buttons mt-3";
+        const continueBtn = document.createElement("button");
+        continueBtn.type = "button"; 
+        continueBtn.textContent = "Continue"; continueBtn.className = "qa-question-button bg-blisstech-primary";
+
+        continueBtn.onclick = () => {
+  const fullPhone = select.value + " " + phoneInput.value;
+  const countryVal = countrySelect.value;
+  handleContactInput(fullPhone, emailInput.value, false, countryVal);
+};
+
+        const skipBtn = document.createElement("button");
+        skipBtn.type = "button";
+         skipBtn.textContent = "Skip for now"; skipBtn.className = "qa-question-button";
+        skipBtn.onclick = () => handleContactInput("", "", true);
+        btnRow.appendChild(continueBtn);
+         btnRow.appendChild(skipBtn);
+
+  
+        contactDiv.appendChild(btnRow);
+        qaCurrentQuestionArea.appendChild(contactDiv);
+      }
+
+    } else {
+      // nothing left — submission step
+      appendMessage("Thank you for your responses. Your inquiry is being submitted.", "bot");
+      setTimeout(handleSubmit, 800);
+    }
+  }
+
+  // --- Answer handlers ---
+  function handleAnswer(questionId, answerValue, displayValue = answerValue) {
+    // normalize input
+    const display = (displayValue || "").toString().trim();
+    if (display) appendMessage(display, "user");
+
+    if (questionId === "initialGreeting") {
+      const normalized = (answerValue || "").toString().toLowerCase().trim();
+      if (normalized === "yes" || normalized === "y") {
+        capturedAnswers.userName = capturedAnswers.userName || ""; // nothing yet
+        currentQuestionIndex++;
+        saveState();
+        setTimeout(displayQuestion, 450);
+      } else {
+        appendMessage("No problem! Feel free to ask if you change your mind.", "bot");
+        setTimeout(() => {
+          closeChatBox();
+          clearState();
+        }, 1200);
+      }
+      return;
+    }
+
+    if (questionId === "finalContactConfirm") {
+      if (answerValue === "submit") {
+        handleSubmit();
+      } else {
+        appendMessage("No problem! The chat has been cancelled.", "bot");
+        setTimeout(() => {
+          closeChatBox();
+          clearState();
+        }, 1200);
+      }
+      return;
+    }
+
+    // For any other question, store & advance
+    capturedAnswers[questionId] = answerValue;
+    currentQuestionIndex++;
+    saveState();
+    setTimeout(displayQuestion, 450);
+  }
+function handleContactInput(phone, email, skip = false, country = "Not provided") {
+  if (!skip && (!phone || phone.trim() === "") && (!email || email.trim() === "")) {
+    appendMessage("Please provide contact info or skip.", "bot");
+    return;
+  }
+
+  capturedAnswers.contactPhone = phone || "Not provided";
+  capturedAnswers.contactEmail = email || "Not provided";
+  capturedAnswers.country = country;
+
+  appendMessage(
+    skip
+      ? "Skipped contact details."
+      : `Phone: ${capturedAnswers.contactPhone}, Email: ${capturedAnswers.contactEmail}, Country: ${capturedAnswers.country}`,
+    "user"
+  );
+
+  currentQuestionIndex++;
+  saveState();
+  setTimeout(displayQuestion, 450);
+}
+
+
+  // --- Submit to Google Script ---
+  function handleSubmit() {
+    if (submissionInProgress) return;
+    submissionInProgress = true;
+
+    // hide interactive UI while submitting
+    qaCurrentQuestionArea.style.display = "none";
+    qaStaticBar.style.display = "none";
+
+    const userName = capturedAnswers.userName || "Chatbot User";
+    const serviceType = capturedAnswers.serviceType || "Not specified";
+    const projectNeeds = capturedAnswers.projectNeeds || "Not specified";
+    const contactPhone = capturedAnswers.contactPhone || "Not provided";
+    const contactEmail = capturedAnswers.contactEmail || "Not provided";
+
+    const messageString = `Inquiry from Chatbot:
+Name: ${userName}
+Service Type: ${serviceType}
+Project Needs: ${projectNeeds}
+Phone: ${contactPhone}
+Email: ${contactEmail}`.trim();
+
+    const dataToSend = new URLSearchParams({
+      name: userName,
+      serviceType: serviceType,
+      projectNeeds: projectNeeds,
+      phone: contactPhone,
+      email: contactEmail !== "Not provided" ? contactEmail : "chatbot_inquiry@blisstechsolutions.in",
+     country: capturedAnswers.country || "Not provided",
+
+      message: messageString,
+      terms: "Yes (via Chatbot)"
+    });
+
+    appendMessage("Submitting your inquiry...", "bot");
+
+    fetch(SCRIPT_WEB_APP_URL, { method: "POST", body: dataToSend })
+      .then(res => {
+        if (res.ok) {
+          appendMessage("Inquiry submitted successfully!", "bot");
+        } else {
+          appendMessage("Error submitting inquiry. Please try again later.", "bot");
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        appendMessage("Network error while submitting. Please try again later.", "bot");
+      })
+      .finally(() => {
+        // after a small delay, close panel and reset
+        setTimeout(() => {
+          closeChatBox();
+          // small delay to allow CSS close animation (if any)
+          setTimeout(() => {
+            clearState();
+            qaHistory.innerHTML = "";
+            qaStaticBar.style.display = "flex";
+            submissionInProgress = false;
+          }, 350);
+        }, 1800);
+      });
+  }
+
+  // --- Static input bar behaviour (the small "Ask a question..." bar) ---
+  (function wireStaticBar() {
+    if (!qaStaticBar) return;
+    const input = qaStaticBar.querySelector("input");
+    const btn = qaStaticBar.querySelector("button");
+    if (!input || !btn) return;
+
+    btn.addEventListener("click", () => {
+      const val = input.value.trim();
+      if (!val) return;
+      appendMessage(val, "user");
+      input.value = "";
+      // Optionally you can send this to server or log it.
+      appendMessage("Thanks — we will review that and get back to you.", "bot");
+    });
+
+    input.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") btn.click();
+    });
+  })();
+
+  // --- Panel toggle button wiring ---
+  qaToggleBtn.addEventListener("click", function () {
+    if (!qaSidePanel.classList.contains("expanded")) {
+      openChatBox();
+      // toggle icons
+      qaToggleBtn.querySelector(".chat-icon")?.classList.toggle("hidden");
+      qaToggleBtn.querySelector(".close-icon")?.classList.toggle("hidden");
+    } else {
+      closeChatBox();
+      qaToggleBtn.querySelector(".chat-icon")?.classList.toggle("hidden");
+      qaToggleBtn.querySelector(".close-icon")?.classList.toggle("hidden");
+    }
+  });
+
+  // --- External navbar chat icon (if you have one) ---
+  const chatNavbarIcon = document.getElementById("chatIcon");
+  if (chatNavbarIcon) {
+    chatNavbarIcon.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (!qaSidePanel.classList.contains("expanded")) {
+        openChatBox();
+      }
+    });
+  }
+
+  // Open initial state only if panel is manually opened
+  // (no automatic open on page load; user clicks the toggle)
+});
+</script>
 
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

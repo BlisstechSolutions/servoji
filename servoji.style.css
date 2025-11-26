@@ -6,6 +6,7 @@
 }
  body{
   overflow-x: hidden;
+  font-family:sans-serif;
 }
 /* Basic navbar styling */
 .navbar {
@@ -62,18 +63,21 @@
     display: none;
     flex-direction: column;
     background: white;
+   
     position: absolute;
     top: 75px;
     right:25px;
-    width: 220px;
+    width: 250px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     padding: 20px;
     border-radius: 0 0 8px 8px;
     z-index: 100;
     gap:10px;
      font-size: 1.1rem;
-     align-items: self-start;
+     align-items:flex-start;
      padding-left: 2rem;
+  
+  
   }
  .nav-links a {
     padding: 2px 0;
@@ -219,7 +223,7 @@
   color:#fff;
   padding:10px 10px;
   border-radius: 10px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -391,7 +395,7 @@
   margin-bottom: 8px;
 }
 .text-block p{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .text-block ul {
   list-style: none;
@@ -399,21 +403,27 @@
 }
 
 .text-block ul li {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   margin-bottom: 6px;
   position: relative;
-  padding-left: 20px;
-  color: #252525;
+  padding-left: 10px;
+  color: #363636;
 }
 
-.text-block ul li::before {
+/*.text-block ul li::before {
   content: "●";
   color: #25A941;
   position: absolute;
   left: 0;
   top: 0;
+}*/
+.text-block ul li img{
+  width:1.2rem;
+  height: 1.2rem;
+  background-color: #c0ebc9;
+  border-radius: 12px;
+  margin-right: 0.5rem;
 }
-
 .servoji-images {
 /*  flex: 1 1 45%;*/
 /*  text-align: center;*/
@@ -801,10 +811,11 @@
 }
 
 .feature-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 10px;
   font-weight: 600;
   color: #111;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .feature-card p {
@@ -821,7 +832,7 @@
     font-weight: 700;
    }
    .why_us img{
-   width:2rem;
+   width:2.rem;
 }
 .feature-card h3{
   font-size: 1.4rem;
@@ -1780,8 +1791,8 @@ margin-bottom: 0.5rem;
  }
    
 #qa-side-panel.expanded {
-    width: min(50vw, 380px);
-    height: 48vh;
+    width: min(50vw, 480px);
+    height: 70vh;
     min-height: 400px;
     /* Glassmorphism properties for the expanded panel */
     background: rgba(255, 255, 255, 0.15);;
@@ -1793,6 +1804,7 @@ margin-bottom: 0.5rem;
     border-radius: 1rem;
     right: 20px;
     z-index: 19999;
+   
 }
     /* Adjusted Mobile styles for expanded state */
     @media (max-width: 768px) {
@@ -1804,7 +1816,7 @@ margin-bottom: 0.5rem;
     }
         #qa-side-panel.expanded {
         width: 90vw;
-        height:50vh;
+        height:71vh;
       /*  height: calc(95vh - env(safe-area-inset-bottom)); /* Use 95vh minus safe area for dynamic height */
         min-height: unset; /* Remove min-height override on mobile */
         bottom: env(safe-area-inset-bottom, 5px); /* Anchor to bottom, respect safe area */
@@ -1828,6 +1840,7 @@ margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
  /* Toggle Icons */
 #qa-side-panel-toggle-btn  .chat-icon { 
@@ -1915,37 +1928,43 @@ margin-bottom: 0.5rem;
       to { opacity: 1; transform: translateY(0); } 
     }
 .qa-current-question-container {
-   display: flex;
+  
+    display: flex;
     flex-direction: column;
-     gap: 0.75rem;
+    
      }
 .qa-question-button {
-    background-color:#1E1E1E;
+    background-color:#25A941;
     color: white;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    margin-bottom: 0.6rem;
 }
-.qa-question-button:hover { background-color: #444444; }
+
 .qa-input-area { 
-  display: flex;
+   display: flex;
    margin-top: 1rem;
    width:100%;
+  align-items: center;
    }
-.qa-input-area input {
-   flex-grow: 1;
-    padding: 0.75rem; 
+.qa-input-area input, .qa-input-area select {
+   flex: 1;
+   width:100%;
+    padding-left: 0.5rem; 
     border: 1px solid #d1d5db;
      border-radius: 0.5rem 0 0 0.5rem;
       outline: none;
-     }
+      box-sizing: border-box;
+ }
+ 
 .qa-input-area button {
     background-color:  #ff9428;
      background: #25A941;
 
     color: white;
-    padding: 1rem 1.25rem;
+    padding: 0.75rem 1.25rem;
     border: none;
     border-radius: 0 0.5rem 0.5rem 0;
     cursor: pointer;
@@ -1954,6 +1973,7 @@ margin-bottom: 0.5rem;
 .qa-input-area button:hover { 
   background-color: #a35e19;
     background: #166626;
+     white-space: nowrap;   /* stops text breaking */
  }
  @media screen and (min-width:768px) and (max-width:992px) {
    .qa-input-area input{
@@ -1970,6 +1990,87 @@ margin-bottom: 0.5rem;
   .qa-input-area button{
     font-size: 1.3rem;
   }
+}
+
+.contact_flex{
+  gap:3px;
+  padding-block:1rem;
+  
+
+}
+.phone_flex{
+  /* width:80%;*/
+    width:330px;
+  display:flex;
+ 
+  margin-bottom: 0.5rem;
+  border: 1ps solid #25A941;
+  border-radius: 6px;
+  margin-left: 0.5rem;
+ border:1px solid #91f0a9;
+  overflow: hidden; /* prevents distortion */
+  box-shadow:  0 8px 32px 0 rgba(31, 38, 135, 0.3);
+}
+.phone_flex_select{
+  border:none;
+   padding:0.8rem;
+   min-width: 80px; 
+}
+.phone_flex_input{
+ width:100%;
+  border:none;
+  padding-block: 0.8rem;
+  color: #fff;
+ 
+   
+}
+
+#qa-input-email{
+ /*  width:80%;*/
+   width:330px;
+   padding:0.8rem;
+    border-radius: 6px;
+     margin-left: 0.5rem;
+      border:1px solid #91f0a9;
+       box-shadow:  0 8px 32px 0 rgba(31, 38, 135, 0.3);
+} 
+#qa-input-email:focus{
+  border:none;
+}
+.flex_buttons{
+ padding-left: 0.8rem;
+
+ 
+}
+.qa-question-button{
+  background: #25A941;
+  border: 1px solid #25A941;
+  margin-right:0.5rem;
+   box-shadow:  0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    
+ }
+
+.qa-question-button:hover{
+  background-color: #1d7c32;
+}
+.country_flex{
+  padding:0.6rem;
+}
+.country_select{
+  width:330px;
+  padding-block:1rem;
+  padding-left: 0.5rem;
+  border-radius: 6px;
+  border:1px solid #91f0a9;
+  box-shadow:  0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  color:#747272;
+}
+@media screen and (max-width:768px){
+  .phone_flex,  #qa-input-email, .country_select{
+    max-width:280px;
+    font-size: 0.92rem;
+  }
+ 
 }
 
 /* footer section styling */
@@ -2156,10 +2257,9 @@ margin-bottom: 0.5rem;
   }
   
   .social-icons a {
-
-  width:1.8rem;
-  height:1.8rem;
-  font-size: 2.5rem;
+    width:1.8rem;
+    height:1.8rem;
+    font-size: 2.5rem;
   
 }
 }

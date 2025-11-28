@@ -244,6 +244,7 @@
   }
  
 .mute-btn img {
+  
   width: 20px;
   height: 20px;
 }
@@ -306,13 +307,11 @@
   width:11rem;
 }
 }
-/*
+
 @media (max-width: 480px) {
-  .car-wrapper {
-    height: 480px;
-    padding: 1rem;
-  }
-}*/
+  .mute-btn{
+    display:none;
+}
 @media screen and (min-width:993px) {
    .car-wrapper{
      height:800px;

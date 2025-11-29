@@ -110,6 +110,7 @@
   height: 100%;
   object-fit: cover; /* ensures it fills the section like background-size: cover */
   z-index: 0;
+   pointer-events: none !important;
 }
 /* 🔊 Mute Button Style */
 .mute-btn {
@@ -124,19 +125,21 @@
   cursor: pointer;
   z-index: 10;
   transition: background 0.3s ease;
+  pointer-events: auto !important;
+  touch-action: manipulation;
 }
 
 .mute-btn:hover {
   background: #166626;
 }
 
-.mute-btn img {
-  width: 25px;
-  height: 25px;
-  filter: brightness(0) invert(1);
-}
+
 
 .car-wrapper-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
     width: 100%;
     z-index: 9999;
 
@@ -205,7 +208,7 @@
 }
 .car-heading .car-wash{
    position: absolute;
-   left:330px;
+   left:80px;
    top:50%;
    margin-top: 1rem;
   font-style: italic;
@@ -243,11 +246,6 @@
     height: 300px;
   }
  
-.mute-btn img {
-  
-  width: 20px;
-  height: 20px;
-}
  .app-buttons{
   gap:15px;
   justify-content: center;
@@ -310,7 +308,8 @@
 
 @media (max-width: 480px) {
   .mute-btn{
-    display:none;
+    display:none
+  }
 }
 @media screen and (min-width:993px) {
    .car-wrapper{

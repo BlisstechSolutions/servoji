@@ -48,12 +48,14 @@
  
  
 <section class="car-wrapper">
-   <video class="background-video" id="backgroundVideo"  autoplay muted loop playsinline>
-    <source src="images/servoji EXPORT1.mp4" type="video/mp4">
+   <video class="background-video" id="backgroundVideo"  autoplay muted loop playsinline >   
+ 
+   
+    <source src="images/Servoji EXPORT1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
-  <!-- 🔊 Mute/Unmute Button -->
+   🔊 Mute/Unmute Button 
   <button id="muteBtn" class="mute-btn">
    <i id="muteIcon" class="fas fa-volume-mute"></i>
   </button>
@@ -625,24 +627,47 @@
     navLinks.classList.toggle('active');
   });
 </script>
+ 
+
 
 <script>
+document.addEventListener("DOMContentLoaded", function () {
   const video = document.getElementById("backgroundVideo");
   const muteBtn = document.getElementById("muteBtn");
   const muteIcon = document.getElementById("muteIcon");
 
-  muteBtn.addEventListener("click", () => {
+  let started = false;
+
+  muteBtn.addEventListener("click", function () {
+
+    // ✅ FIRST TAP: force start video with sound
+    if (!started) {
+      video.muted = false;
+      video.play().then(() => {
+        started = true;
+        muteIcon.classList.remove("fa-volume-mute");
+        muteIcon.classList.add("fa-volume-up");
+      }).catch(err => {
+        console.log("Mobile blocked play:", err);
+      });
+      return;
+    }
+
+    // ✅ NORMAL MUTE / UNMUTE AFTER START
     video.muted = !video.muted;
 
     if (video.muted) {
       muteIcon.classList.remove("fa-volume-up");
       muteIcon.classList.add("fa-volume-mute");
     } else {
-     muteIcon.classList.remove("fa-volume-mute");
+      muteIcon.classList.remove("fa-volume-mute");
       muteIcon.classList.add("fa-volume-up");
     }
+
   });
+});
 </script>
+
 
 <script>
   // Get modal and elements

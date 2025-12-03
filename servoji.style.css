@@ -423,11 +423,14 @@
 }
 
 .text-block ul li {
+  display:flex;
+  align-items: flex-start;
   font-size: 1.05rem;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   position: relative;
-  padding-left: 10px;
+ /* padding-left: 10px;*/
   color: #363636;
+   line-height: 1.6;
 }
 
 /*.text-block ul li::before {
@@ -442,7 +445,9 @@
   height: 1.2rem;
   background-color: #c0ebc9;
   border-radius: 12px;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
+   margin-top: 4px;
+    flex-shrink: 0;
 }
 .servoji-images {
 /*  flex: 1 1 45%;*/
@@ -582,7 +587,7 @@
   font-size: 1.9rem;
   font-weight: 700;
   position: absolute;
-  top:30px;
+  top:50px;
  left: 50%;
  transform: translateX(-50%);
 }
@@ -611,7 +616,13 @@
     font-size: 3rem;
   }
 }
-
+@media screen and (min-width:1024px){
+  .discover_title{
+    top:50px;
+    font-size: 3rem;
+    text-wrap: nowrap;
+  }
+}
 /* How it works styling */
 
 .how-it-works {
@@ -1089,6 +1100,39 @@
    
  }
 }
+@media  screen and (max-width:399px) {
+  
+.partner-section h1 {
+  font-size: 1.4rem;
+}
+.partner-section h1 img{
+    width:4rem;
+  }
+.partner-section .subtitle {
+   margin-bottom: 40px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.subtitle span{
+   font-size: 1.6rem;
+}
+.partner-card{
+  width:280px;
+  height:220px;
+ }
+ .partner-mobile{
+     margin-left: 3rem;
+}
+ .partner-card p {
+  font-size: 1.08rem;
+ 
+}
+.partner-car{
+   width: 250px;
+   margin-right: 3rem;
+ }
+  
+}
 @media screen and (min-width:993px){
   .partner-section{
      padding: 60px 20px 100px;
@@ -1396,7 +1440,15 @@
   height:1rem;
   height:3rem;
   margin-left:0.5rem ;
+ appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  background-size: 1.7rem;
  
+  
 }
 
 .phone-input input {
@@ -1420,7 +1472,7 @@ input:-webkit-autofill:active {
 
 
 /* --- State Dropdown --- */
-#state {
+#state, #country {
   background: #E4E4E4;
   border: none;
   padding: 10px;
@@ -1428,7 +1480,15 @@ input:-webkit-autofill:active {
   border-radius: 10px;
   outline: none;
   cursor: pointer;
-  
+   padding-right: 40px;   /* ✅ adds space after the text */
+  padding-left: 12px;
+   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 1.7rem;
 }
 
 /* --- Message Box --- */
@@ -2044,14 +2104,16 @@ margin-bottom: 0.5rem;
   border:none;
    padding:0.8rem;
    min-width: 80px; 
+ 
+   
 }
 .phone_flex_input{
  width:100%;
   border:none;
   padding-block: 0.8rem;
   color: #fff;
- 
-   
+ padding-left: 0.5rem;
+ margin-left: 0.5rem;  
 }
 
 #qa-input-email{
@@ -2082,23 +2144,40 @@ margin-bottom: 0.5rem;
   background-color: #1d7c32;
 }
 .country_flex{
-  padding:0.6rem;
+ margin-top: 0.5rem;
+margin-left: 0.5rem;
+ 
 }
 .country_select{
   width:330px;
-  padding-block:1rem;
   padding-left: 0.5rem;
   border-radius: 6px;
   border:1px solid #91f0a9;
   box-shadow:  0 8px 32px 0 rgba(31, 38, 135, 0.3);
   color:#747272;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
   .phone_flex,  #qa-input-email, .country_select{
-    max-width:280px;
+    max-width:300px;
     font-size: 0.92rem;
   }
  
+}
+@media screen and (max-width:400px){
+  .phone_flex_input{
+
+ padding-left: 0rem;
+ margin-left: 0.1rem;  
+}
+ .phone_flex,  #qa-input-email, .country_flex, .country_select{
+    max-width:280px;
+    font-size: 0.92rem;
+   
+}
+   #qa-input-email{
+    padding-left: 0.5rem;
+   }
+   
 }
 
 

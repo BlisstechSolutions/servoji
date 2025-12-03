@@ -354,6 +354,43 @@
         </div>
         <small class="error-message" id="phoneError"></small>
 
+
+     <!-- Country -->
+<label for="country">Country <span style="color:red"></span></label>
+<select id="country">
+  <option value=""></option>
+  <option>India</option>
+  <option>United States</option>
+  <option>United Kingdom</option>
+  <option>Australia</option>
+  <option>Canada</option>
+  <option>Germany</option>
+  <option>France</option>
+  <option>Japan</option>
+  <option>China</option>
+  <option>Singapore</option>
+  <option>UAE</option>
+  <option>Saudi Arabia</option>
+  <option>South Africa</option>
+  <option>New Zealand</option>
+  <option>Brazil</option>
+  <option>Russia</option>
+  <option>Italy</option>
+  <option>Spain</option>
+  <option>Mexico</option>
+  <option>Indonesia</option>
+  <option>Malaysia</option>
+  <option>Thailand</option>
+  <option>Vietnam</option>
+  <option>Philippines</option>
+  <option>Pakistan</option>
+  <option>Bangladesh</option>
+  <option>Sri Lanka</option>
+  <option>Nepal</option>
+</select>
+<small class="error-message" id="countryError"></small>
+
+
         <!-- State -->
         <label for="state">State <span style="color:red"></span></label>
         <select id="state">
@@ -766,6 +803,8 @@ form.addEventListener("submit", async function(e) {
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const phone = document.getElementById("phone").value.trim();
+  const country = document.getElementById("country").value;
+
   const state = document.getElementById("state").value;
   const message = document.getElementById("message").value.trim();
   const consent = document.getElementById("consent").checked;
@@ -811,6 +850,12 @@ form.addEventListener("submit", async function(e) {
     valid = false;
   }
 
+// Country validation
+if (!country) {
+  showError("countryError", "Please select your country.");
+  valid = false;
+}
+
   // State validation
   if (!state) {
     showError("stateError", "Please select your state.");
@@ -832,13 +877,15 @@ form.addEventListener("submit", async function(e) {
   if (!valid) return;
 
   // ✅ Submit to Google Sheets
-  const scriptURL = "https://script.google.com/macros/s/AKfycbxAz9pq5FJdm2ETPnv370T-vcWAbLCszCbfztFEJR4GN38gyyVPPWHDqaXQZWTRVzwzOw/exec"; // 🔁 replace with your actual web app URL
+  const scriptURL = "https://script.google.com/macros/s/AKfycbzohM5nwwFaGgMZPT7-uDu2nBbiRd5BjAqpP5b5GJW8G8yAVo7A2m_jCQlzG3gn1zRgcg/exec"; // 🔁 replace with your actual web app URL
   showAlert("⏳ Sending your message... Please wait.");
  
   const formData = new FormData();
 formData.append("name", name);
 formData.append("email", email);
 formData.append("phone", `${countryCode} ${phone}`);
+formData.append("country", country);
+
 formData.append("state", state);
 formData.append("message", message);
 

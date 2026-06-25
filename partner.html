@@ -95,6 +95,15 @@
   #benefits h2{
   margin-top:20px;
 }
+@media (max-width: 768px){
+
+  .hero{
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+}
 
     
 
@@ -648,7 +657,7 @@ h2{
 }
 
 .partner-card{
-    max-width:1150px;
+    max-width:1000px;
     margin:auto;
     background:white;
     border-radius:20px;
@@ -659,7 +668,7 @@ h2{
 
 .form-side{
     flex:1;
-    padding:35px;
+    padding:25px;
 }
 
 .image-side{
@@ -854,6 +863,16 @@ h2{
    margin-top: 80px;
    margin-left: 40px;
 }
+.cta-details a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.cta-details a:hover{
+    text-decoration: underline;
+}
+
+
   </style>
 </head>
 
@@ -1256,12 +1275,12 @@ h2{
       <form id="partnerForm">
 
         <label>Owner Name</label>
-        <input type="text" id="name">
+        <input type="text" id="name" required>
 
         <div class="row-2">
           <div>
             <label>Phone Number</label>
-            <input type="text" id="phone">
+            <input type="text" id="phone" pattern="[0-9]{10}"required>
           </div>
 
           <div>
@@ -1299,7 +1318,7 @@ h2{
         placeholder="Tell us about your business"></textarea>
 
         <button type="submit">
-          Request Partnership
+          SUBMIT APPLICATION
         </button>
 
       </form>
@@ -1328,11 +1347,10 @@ h2{
       <p class="mb-4" style="font-size:30px;">
         Join our partner network and start receiving more bookings today.
       </p>
-      <p class="cta-details">
-📧 support@blisstechsolutions.in <br>
-📞 +91 9971294520 <br>
+<p class="cta-details">
+    📧 <a href="mailto:support@blisstechsolutions.in">support@blisstechsolutions.in</a><br>
+    📞 <a href="tel:+919971294520">+91 9971294520</a><br>
 </p>
-
       <a href="#apply" class="btn btn-warning btn-lg rounded-pill px-5">
 
         Become A Partner
@@ -1433,5 +1451,8 @@ document.getElementById("partnerForm").addEventListener("submit", function(e) {
 
 });
 </script>
+<a href="https://wa.me/919971294520" class="chat-us-btn">
+    💬 Chat Us
+</a>
 </body>
 </html>
